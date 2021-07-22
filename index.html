@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Sean's Weather App</title>
+	</head>
+	<body>
+		<!--
+
+        Design
+            -Text input box with placeholder "Search by location"
+                -After a location is searched and enter is pressed, beneath the input box should be an image of the weather (clouds image, sun image, rain image, etc)
+                -In between should be the actual weather in degrees Celcius, example is '28' + degree symbol + "C"
+                -Image of the weather (cloud image, sun image, rain image, etc) should be on the other side of the temperature
+                    (above is 3 elements so can use a div and display: flex with a flex-direction: row)
+                -Beaneath the two images & the temperature should be a description of the weather (Clear, Sunny, Clouds)
+            -Need to see what data is returned from the endpoint
+                -How many different types of weather do they show so that we can pair an image with each of them
+     -->
+		<main>
+			<section class="location_search">
+				<form class="form" id="form">
+					<input type="text" name="location" placeholder="Search by location" />
+					<label name="location"></label>
+				</form>
+			</section>
+
+            <section class="location_results">
+                <div class="temperature_upper">
+                    <div class="temperature_icon" id="temperature_icon">
+                        <!-- target this element and change the HTML by putting in an image -->
+                    </div>
+                    <div>
+                        <h2 class="temperature_degrees" id="temperature_degrees"></h2>
+                    </div>
+                    <div class="temperature_icon2" id="temperature_icon2">
+                        <!-- target this element and change the HTML by putting in an image -->
+                    </div>
+                </div>
+                <div class="temperature_lower">
+                    <div>
+                        <h2 class="temperature_description" id="temperature_description">
+
+                        </h2>
+                    </div>
+                </div>
+
+            </section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>

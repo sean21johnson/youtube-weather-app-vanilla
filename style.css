@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.location_result {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature_upper {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
